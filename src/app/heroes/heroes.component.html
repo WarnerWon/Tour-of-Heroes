@@ -1,0 +1,40 @@
+<div class="skeletoon">
+    <div class="Tittle">
+        <h1>Heroes</h1>
+    </div>
+    <div [ngClass]="'wrapperInline'">
+        <div [ngClass]="'heroes-container'">
+            <ul *ngFor="let hero of heroes">
+                <button (click)="showDetails(hero)" [ngClass]="'heroe-container'">
+                    <span>{{hero.id}}.- {{hero.name}}</span> <p *ngIf="hero.score>6">Es un buen Heroe</p> 
+                </button>
+            </ul>
+        </div>
+        <div [ngClass]="'showDataSec'">
+            <div [ngClass]="'showDataButtonsec'">
+                <button (click)="show()" [ngClass]="'button'">mostrar info</button>
+            </div>
+            <div [ngClass]="showsection ? 'showDataDesc' : 'hidden'">
+                <h2>Detalles de {{heroe.name}}</h2>
+                <div><span>id: </span>{{heroe.id}}</div>
+                <div><span>name: </span>{{heroe.name}}</div>
+                <div><span>score: </span>{{heroe.score}}</div>
+                <div>
+                    <label>id:
+                        <input [(ngModel)]="heroe.id" placeholder="id"/>
+                    </label>
+                </div>
+                <div>
+                    <label>name:
+                    <input [(ngModel)]="heroe.name" placeholder="name"/>
+                    </label>
+                    <label>score:
+                        <input [(ngModel)]="heroe.score" placeholder="score"/>
+                    </label>
+                </div>
+                <button [ngClass]="'button2'" (click)="save(heroe)"> Guardar info</button>
+                <button [ngClass]="'button'" (click)="edit(heroe)"> Editar info</button>
+            </div>
+        </div>
+    </div>
+</div>

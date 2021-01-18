@@ -1,0 +1,100 @@
+h1 , h2, span, p, button , div {
+    font-family: 'sans-serif';
+    color: rgba(9, 42, 53, 0.507);
+    text-shadow: 0px 0px 5px rgb(201, 214, 245);
+}
+
+
+.skeletoon {
+    display: block;
+    width: 60%;
+    margin: auto;
+}
+
+.wrapperInline {
+    display: inline-flex;
+    
+}
+
+.heroes-container {
+    border-style:solid;
+    border-width: 5px;
+    color: cornflowerblue;
+    width: max-content;
+    margin-right: 4rem;
+    padding: 1rem;
+    box-shadow: 0px 0px 5px rgb(85, 114, 170);
+}
+
+.heroe-container {
+    border-style: double;
+    border-width: 5px;
+    border-color: rgb(85, 114, 170);
+    color: cornflowerblue;
+    text-align: center;
+    min-height: 1rem;
+    padding: 1rem;
+    min-width: 12rem;
+    margin: auto;
+    margin-right: 3em;
+}
+
+.heroe-container:hover {
+    box-shadow: 0px 0px 5px rgb(107, 185, 248);
+}
+
+.heroe-container:focus {
+    background-color: lightgray;
+}
+
+.showDataSec {
+    display: block;
+    width: 60em;
+    padding: 1em;
+}
+
+.showDataButtonsec{
+    width: min-content;
+    text-align: center;
+    border-style: double;
+}
+
+.button {
+    border-style: none;
+    background-color: rgb(16, 197, 0);
+    color: white;
+    width: 20em;
+    padding: 1em;
+    border-radius: 8%;
+}
+
+.button2 {
+    border-style: none;
+    background-color: rgb(22, 95, 231);
+    color: white;
+    width: 20em;
+    padding: 1em;
+    border-radius: 8%;
+}
+
+.button:focus {
+
+    background-color: rgb(29, 102, 0);
+    
+}
+
+.showDataDesc {
+    display: block;
+    margin-top: 2em;
+    width: initial;
+    height: max-content;
+    padding: 10em;
+    border-style: solid;
+    border-width: 5px;
+    border-color: rgb(163, 108, 108);
+    box-shadow: 0px 0px 5px rgb(163, 108, 108);
+}
+
+.hidden {
+    display:none
+}
